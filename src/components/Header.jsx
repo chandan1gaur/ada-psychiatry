@@ -7,7 +7,7 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="bg-black text-white h-[80px] sticky top-0 z-50 border-b border-[#C18C2C]" style={{ width: '100vw', marginLeft: 'calc(-50vw + 50%)' }}>
+    <header className="bg-black text-white h-[80px] sticky top-0 z-50 border-b border-gold-600" style={{ width: '100vw', marginLeft: 'calc(-50vw + 50%)' }}>
       <div className="w-full flex items-center px-6 sm:px-8 h-full">
         <div className="flex items-center gap-3">
           <img
@@ -53,7 +53,7 @@ const Header = () => {
             <Button
               variant="gradient"
               size="medium"
-              className="w-[200px] h-[40px] rounded-[50px] font-work-sans font-medium text-[13px] text-center bg-black text-black flex items-center justify-center leading-none"
+              className="w-[220px] h-[40px] rounded-[60px] font-work-sans font-medium text-[11px] text-center bg-black text-black flex items-center justify-center leading-none"
             >
               Book an Appointment
             </Button>
@@ -71,7 +71,7 @@ const Header = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="lg:hidden bg-black px-4 py-6 border-t border-[#2B2B2B]" style={{ width: '100vw', marginLeft: 'calc(-50vw + 50%)' }}>
+        <div className="lg:hidden bg-black px-4 py-6 border-t border-charcoal-700" style={{ width: '100vw', marginLeft: 'calc(-50vw + 50%)' }}>
           <nav className="flex flex-col space-y-4">
             <a href="#home" className="text-white hover:text-amber-700 transition-colors font-medium flex items-center" onClick={toggleMenu}>
               Who we are

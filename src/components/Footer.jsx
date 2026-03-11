@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-8xl mx-auto px-4 sm:px-6 py-10">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 sm:gap-10">
           <div className="order-1">
-            <h4 className="text-[#DAA520] font-wulkan-display font-bold text-[13px] mb-4 text-left">Quick Links</h4>
+            <h4 className="text-gold-700 font-wulkan-display font-bold text-[13px] mb-4 text-left">Quick Links</h4>
             <ul className="space-y-3 text-[12px] text-white text-left">
               <li>Who We Are</li>
               <li>What We Treat</li>
@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
 
           <div className="order-2">
-            <h4 className="text-[#DAA520] font-wulkan-display font-bold text-[13px] mb-4 text-left">Resources</h4>
+            <h4 className="text-gold-700 font-wulkan-display font-bold text-[13px] mb-4 text-left">Resources</h4>
             <ul className="space-y-3 text-[12px] text-white text-left">
               <li>FAQs</li>
               <li>Blog</li>
@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
 
           <div className="order-3">
-            <h4 className="text-[#DAA520] font-wulkan-display font-bold text-[13px] mb-4 text-left">Legal</h4>
+            <h4 className="text-gold-700 font-wulkan-display font-bold text-[13px] mb-4 text-left">Legal</h4>
             <ul className="space-y-3 text-[12px] text-white text-left">
               <li>Terms</li>
               <li>Privacy</li>
@@ -35,10 +35,10 @@ const Footer = () => {
           </div>
 
           <div className="order-4">
-            <h4 className="text-[#DAA520] font-wulkan-display font-bold text-[13px] mb-3 text-left">Business Hours</h4>
+            <h4 className="text-gold-700 font-wulkan-display font-bold text-[13px] mb-3 text-left">Business Hours</h4>
             <p className="text-[12px] text-white text-left">Monday - Thursday</p>
             <p className="text-[12px] text-white text-left">09:00 am - 4:00 pm</p>
-            <h4 className="text-[#DAA520] font-wulkan-display font-bold text-[13px] mt-5 mb-2 text-left">For Careers</h4>
+            <h4 className="text-gold-700 font-wulkan-display font-bold text-[13px] mt-5 mb-2 text-left">For Careers</h4>
             <p className="text-[12px] text-white text-left">Interested in joining the ADA Team?</p>
             <p className="text-[12px] text-white text-left">Career@adapsychiatry.com</p>
           </div>
@@ -52,13 +52,13 @@ const Footer = () => {
               />
               <span className="text-[11px] font-semibold tracking-[2px]">ADA PSYCHIATRY</span>
             </div>
-            <p className="text-[#DAA520] text-[12px] mb-2 text-left">Locate us</p>
+            <p className="text-gold-700 text-[12px] mb-2 text-left">Locate us</p>
             <p className="text-[12px] text-white leading-[18px] mb-4 text-left">
               1802 E Ray Road, STE A107, Chandler, Arizona 85225
               <br />
               Phone: 480-526-9292
             </p>
-            <p className="text-[#DAA520] text-[12px] mb-2 text-left">Follow us</p>
+            <p className="text-gold-700 text-[12px] mb-2 text-left">Follow us</p>
             <div className="flex items-center gap-3 text-white">
               <span className="w-4 h-4 inline-flex">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
@@ -92,7 +92,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t border-[#2B2B2B] py-4 text-center text-[11px] text-white">
+      <div className="border-t border-charcoal-700 py-4 text-center text-[11px] text-white">
         � Ada Psychiatry. All rights reserved.
       </div>
     </footer>

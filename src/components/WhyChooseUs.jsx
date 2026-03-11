@@ -15,28 +15,31 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <Section className="bg-[#F7EED9]">
+    <Section className="bg-cream-100">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
         <div className="w-full">
-          <img
-            src="/images/7dc04fb34c515c443278887c52067648f3475290.png"
-            alt="Counseling session"
-            className="w-full h-auto object-cover"
-          />
+          <div className="relative inline-block">
+            <div className="absolute -bottom-3 -right-3 w-full h-full border border-gold-600 rounded-[4px]"></div>
+            <img
+              src="/images/7dc04fb34c515c443278887c52067648f3475290.png"
+              alt="Counseling session"
+              className="relative w-full h-auto object-cover"
+            />
+          </div>
         </div>
 
-        <div className="text-[#1B1B1B]">
+        <div className="text-ink-900">
           <h2 className="font-wulkan-display font-bold text-[32px] sm:text-[38px] leading-[42px] sm:leading-[48px] mb-6">
             Why Should You Choose
             <br />
             Ada Psychiatry?
           </h2>
 
-          <div className="border-t border-[#D8C9A6]">
+          <div className="border-t border-gold-600">
             {highlights.map((item) => (
-              <div key={item.title} className="border-b border-[#D8C9A6] py-4">
-                <div className="flex items-start gap-3">
-                  <span className="text-[22px] leading-[26px] text-[#1B1B1B]">
+              <div key={item.title} className="border-b border-gold-600 py-4">
+                <div className="flex items-start gap-3 text-left">
+                  <span className="text-[22px] leading-[26px] text-ink-900">
                     {item.open ? '-' : '+'}
                   </span>
                   <div>
@@ -44,7 +47,7 @@ const WhyChooseUs = () => {
                       {item.title}
                     </h3>
                     {item.open && (
-                      <p className="mt-2 font-work-sans text-[14px] sm:text-[15px] leading-[22px] text-[#3A3A3A] max-w-[520px]">
+                      <p className="mt-2 font-work-sans text-[14px] sm:text-[15px] leading-[22px] text-stone-700 max-w-[520px]">
                         {item.description}
                       </p>
                     )}

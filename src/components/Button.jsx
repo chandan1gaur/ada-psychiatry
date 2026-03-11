@@ -6,7 +6,7 @@ const Button = ({ children, variant = 'primary', size = 'medium', onClick, class
   const variants = {
     primary: 'bg-gold-400 text-navy-900 hover:bg-gold-500 focus:ring-gold-400',
     secondary: 'bg-transparent border-2 border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-navy-900 focus:ring-gold-400',
-    gradient: 'text-black hover:opacity-90 focus:ring-yellow-600',
+    gradient: 'text-black hover:opacity-90 focus:ring-gold-600 bg-gradient-to-r from-gold-600 via-gold-300 to-gold-600',
   };
 
   const sizes = {
@@ -21,7 +21,7 @@ const Button = ({ children, variant = 'primary', size = 'medium', onClick, class
     <button
       className={`${baseClasses} ${!isGradient ? variants[variant] : variants.gradient} ${sizes[size]} ${className}`}
       onClick={onClick}
-      style={isGradient ? { background: 'linear-gradient(90deg, #C18C2C 0%, #FCF38A 50.52%, #C18C2C 100%)', ...style } : style}
+      style={isGradient ? { ...style } : style}
     >
       {children}
     </button>

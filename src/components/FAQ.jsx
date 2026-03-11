@@ -32,27 +32,27 @@ const FAQ = () => {
     <Section className="bg-cream-50">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-10">
-          <h2 className="font-wulkan-display font-bold text-[28px] sm:text-[34px] text-[#1B1B1B]">
+          <h2 className="font-wulkan-display font-bold text-[28px] sm:text-[34px] text-ink-900">
             Frequently asked questions
           </h2>
         </div>
 
-        <div className="border-t border-[#E6D8B8]">
+        <div className="border-t border-sand-400">
           {faqs.map((faq, index) => (
-            <div key={index} className="border-b border-[#E6D8B8]">
+            <div key={index} className="border-b border-sand-400">
               <button
                 className="w-full text-left py-4 flex items-start gap-3"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className="text-[#1B1B1B] text-[20px] leading-[24px] mt-[2px]">
+                <span className="text-ink-900 text-[20px] leading-[24px] mt-[2px]">
                   {openIndex === index ? '-' : '+'}
                 </span>
                 <div>
-                  <h3 className="font-wulkan-display font-bold text-[18px] leading-[26px] text-[#1B1B1B]">
+                  <h3 className="font-wulkan-display font-bold text-[18px] leading-[26px] text-ink-900">
                     {faq.question}
                   </h3>
                   {openIndex === index && faq.answer && (
-                    <p className="mt-2 font-work-sans text-[14px] leading-[22px] text-[#1B1B1B]">
+                    <p className="mt-2 font-work-sans text-[14px] leading-[22px] text-ink-900">
                       {faq.answer}
                     </p>
                   )}
@@ -64,7 +64,7 @@ const FAQ = () => {
 
         <div className="mt-8 flex justify-center">
           <button
-            className="font-work-sans font-medium text-[14px] sm:text-[15px] text-black rounded-full hover:opacity-90 transition-opacity flex items-center justify-center gap-2 w-[190px] sm:w-[210px] h-[44px] sm:h-[48px] bg-gradient-to-r from-[#C18C2C] via-[#FCF38A] to-[#C18C2C]"
+            className="font-work-sans font-medium text-[14px] sm:text-[15px] text-black rounded-full hover:opacity-90 transition-opacity flex items-center justify-center gap-2 w-[190px] sm:w-[210px] h-[44px] sm:h-[48px] bg-gradient-to-r from-gold-600 via-gold-300 to-gold-600"
           >
             See all FAQ
             <svg width="18" height="18" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">

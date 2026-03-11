@@ -46,13 +46,13 @@ function App() {
 
           {/* Hero Content */}
           <div className="absolute left-4 sm:left-6 md:left-10 lg:left-14 top-[18%] sm:top-[20%] z-20 max-w-600">
-            <div className=" rounded-md p-4 sm:p-5 md:p-6 max-w-[320px] sm:max-w-[360px] md:max-w-[600px]">
+            <div className=" rounded-md p-4 sm:p-5 md:p-6 max-w-[320px] sm:max-w-[360px] md:max-w-[465px]">
               <h1 className="font-wulkan-display font-semibold text-[26px] sm:text-[30px] md:text-[34px] lg:text-[36px] leading-[32px] sm:leading-[38px] uppercase text-white text-left">
                 Need a mental
                 <br />
-                health
-                <br />
-                provider?
+                health provider?
+           
+                
               </h1>
               <h2 className="mt-3 font-wulkan-display font-semibold text-[13px] sm:text-[14px] text-white text-left">
                 No Look Further
@@ -61,7 +61,7 @@ function App() {
                 Our goal is to provide a safe, comfortable, and warm environment so that you can openly discuss your mental health needs.
               </p>
               <button
-                className="mt-4 text-black font-work-sans font-medium text-[13px] rounded-full hover:opacity-90 transition-opacity flex items-center justify-center gap-2 w-[150px] h-[40px] bg-gradient-to-r from-[#C18C2C] via-[#FCF38A] to-[#C18C2C]"
+                className="mt-4 text-black font-work-sans font-medium text-[13px] rounded-full hover:opacity-90 transition-opacity flex items-center justify-center gap-2 w-[150px] h-[40px] bg-gradient-to-r from-gold-600 via-gold-300 to-gold-600"
               >
                 Learn More
                 <svg width="18" height="18" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">

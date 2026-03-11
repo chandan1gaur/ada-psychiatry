@@ -10,7 +10,7 @@ const MeetTheFounder = () => {
             <img
               src="/images/07686e42742c2a4215779139c67f2d0ae1841330.png"
               alt="Lakeisha Appleton"
-              className="w-full max-w-[520px] h-[280px] sm:h-[320px] lg:h-[340px] object-cover rounded-3xl shadow-xl"
+              className="w-full max-w-[520px] h-[280px] sm:h-[320px] lg:h-[300px] object-cover rounded-3xl shadow-xl"
             />
           </div>
 
@@ -25,7 +25,7 @@ const MeetTheFounder = () => {
               FNP-C, PMHNP- BC
             </p>
             <p className="font-playfair-display italic text-[13px] sm:text-[14px] leading-[22px] text-[#1B1B1B] mb-6 text-left">
-              "Mental health problems don’t define who you are. They are something you experience. You walk in the rain and you feel the rain, but, importantly, YOU ARE NOT THE RAIN." — Matt Haig
+              "Mental health problems don't define who you are. They are something you experience. You walk in the rain and you feel the rain, but, importantly, YOU ARE NOT THE RAIN." - Matt Haig
             </p>
             <button
               className="font-work-sans font-medium text-[13px] sm:text-[14px] text-black rounded-full hover:opacity-90 transition-opacity flex items-center justify-center gap-2 w-[150px] sm:w-[160px] h-[42px] sm:h-[46px] bg-gradient-to-r from-[#C18C2C] via-[#FCF38A] to-[#C18C2C]"

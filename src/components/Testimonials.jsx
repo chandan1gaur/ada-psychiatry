@@ -83,7 +83,7 @@ const Testimonials = () => {
   return (
     <Section id="testimonials" className="">
       <div className="text-center mb-10">
-        <h2 className="font-wulkan-display font-bold text-[28px] sm:text-[34px] text-[#1B1B1B]">
+        <h2 className="font-wulkan-display font-bold text-[28px] sm:text-[34px] text-ink-900">
           What Our Patients Are saying
         </h2>
       </div>
@@ -114,17 +114,16 @@ const Testimonials = () => {
               className="flex-shrink-0"
               style={{ width: `${cardWidth}px` }}
             >
-              <div className="bg-[#F7EED9] border border-[#FFFFFF] rounded-[24px] overflow-hidden shadow-[0_12px_24px_rgba(27,27,27,0.08)] h-full">
+              <div className="bg-cream-100 border border-white rounded-[24px] overflow-hidden shadow-[0_12px_24px_rgba(27,27,27,0.08)] h-full">
                 <div className="p-6 sm:p-8">
-                  {/* <div className="text-[48px] leading-[48px] text-[#1B1B1B] mb-4">&ldquo;</div> */}
-                  <div className="flex items-center justify-center font-wulkan-display font-bold text-[64px] sm:text-[72px] leading-[1] mb-4 ">
+                  <div className="flex items-center justify-center font-wulkan-display font-bold text-[64px] sm:text-[72px] leading-[1] mb-4 text-ink-900">
         &ldquo;
       </div>
-                  <p className="font-work-sans text-[14px] sm:text-[15px] leading-[22px] text-[#1B1B1B]">
+                  <p className="font-work-sans text-[14px] sm:text-[15px] leading-[22px] text-ink-900">
                     {testimonial.text}
                   </p>
                 </div>
-                <div className="bg-[#C18C2C] px-6 py-5 flex items-center gap-3">
+                <div className="bg-gold-600 px-6 py-5 flex flex-col items-center justify-center gap-2 text-center">
                   <img
                     src={testimonial.avatar}
                     alt={testimonial.name}
@@ -153,7 +152,7 @@ const Testimonials = () => {
             type="button"
             aria-label={`Go to testimonial ${i + 1}`}
             onClick={() => goTo(i)}
-            className={`w-2 h-2 rounded-full ${i === activeDot ? 'bg-[#C18C2C]' : 'border border-[#C18C2C]'}`}
+            className={`w-2 h-2 rounded-full ${i === activeDot ? 'bg-gold-600' : 'border border-gold-600'}`}
           />
         ))}
       </div>
