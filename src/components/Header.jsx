@@ -8,17 +8,17 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="bg-black text-white h-[80px] sticky top-0 z-50 border-b border-gold-600">
+    <header className="bg-black text-white h-[64px] sm:h-[80px] sticky top-0 z-50 border-b border-gold-600">
       <Container className="h-full">
         <div className="w-full flex items-center h-full gap-6">
           <div className="flex items-center gap-3 flex-shrink-0">
           <img
             src="/images/b029bc51ef711d6a2be540f499ae3581a58a5da6.png"
             alt="Ada Psychiatry Logo"
-            className="w-[38px] h-[38px] object-contain"
+            className="w-[32px] h-[32px] sm:w-[38px] sm:h-[38px] object-contain"
           />
           <div className="flex flex-col leading-tight">
-            <span className="font-work-sans font-semibold text-[14px] tracking-[3px]">Ada Psychiatry</span>
+            <span className="font-work-sans font-semibold text-[12px] sm:text-[14px] tracking-[3px]">Ada Psychiatry</span>
             {/* <span className="font-work-sans font-semibold text-[14px] tracking-[3px]"></span> */}
           </div>
           </div>

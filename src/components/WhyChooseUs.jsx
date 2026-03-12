@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
 
   return (
     <Section className="bg-cream-100">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         <div className="w-full">
           <div className="relative inline-block">
             <div className="absolute -bottom-3 -right-3 w-full h-full border border-gold-600 rounded-[4px]"></div>
@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
         </div>
 
         <div className="text-ink-900">
-          <h2 className="font-wulkan-display font-bold text-[32px] sm:text-[38px] leading-[42px] sm:leading-[48px] mb-6">
+          <h2 className="font-wulkan-display font-bold text-[26px] sm:text-[32px] lg:text-[38px] leading-[36px] sm:leading-[42px] lg:leading-[48px] mb-6">
             Why Should You Choose
             <br />
             Ada Psychiatry?

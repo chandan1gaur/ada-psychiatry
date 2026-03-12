@@ -32,7 +32,7 @@ const FAQ = () => {
     <Section className="bg-cream-50">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-10">
-          <h2 className="font-wulkan-display font-bold text-[28px] sm:text-[34px] text-ink-900">
+          <h2 className="font-wulkan-display font-bold text-[24px] sm:text-[28px] lg:text-[34px] text-ink-900">
             Frequently asked questions
           </h2>
         </div>

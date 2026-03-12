@@ -13,10 +13,10 @@ const StepsToGetStarted = () => {
         </h2>
       </div>
 
-      <div className="flex items-start justify-center gap-4 text-gold-600 overflow-x-auto md:overflow-visible no-scrollbar">
+      <div className="grid grid-cols-2 gap-8 md:flex md:items-start md:justify-center md:gap-4 text-gold-600">
         {stepsData.map((step, index) => (
           <React.Fragment key={step.number}>
-            <div className="flex flex-col items-center text-center text-white min-w-[150px]">
+            <div className="flex flex-col items-center text-center text-white">
               <img src={step.icon} alt="" className="w-10 h-10 sm:w-12 sm:h-12 mb-3" />
               <div className="font-wulkan-display font-bold text-[20px] rounded-full px-3 py-1 mb-2 bg-gradient-to-r from-[#C18C2C] via-[#FCF38A] to-[#C18C2C] bg-clip-text text-transparent">
                 {step.number}
@@ -26,7 +26,7 @@ const StepsToGetStarted = () => {
               </p>
             </div>
             {index < stepsData.length - 1 && (
-              <span className="flex-1 mt-[14px] border-t border-dashed border-stone-600" />
+              <span className="hidden md:block flex-1 mt-[14px] border-t border-dashed border-stone-600" />
             )}
           </React.Fragment>
         ))}

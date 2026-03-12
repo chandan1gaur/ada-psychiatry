@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white">
       <Container className="py-10">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 sm:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10">
           <div className="order-1">
             <h4 className="text-gold-700 font-wulkan-display font-bold text-[13px] mb-4 text-left">Quick Links</h4>
             <ul className="space-y-3 text-[12px] text-white text-left">
@@ -44,7 +44,7 @@ const Footer = () => {
             <p className="text-[12px] text-white text-left">Career@adapsychiatry.com</p>
           </div>
 
-          <div className="order-5 col-span-2 md:col-span-1 mt-4 md:mt-0">
+          <div className="order-5 col-span-1 sm:col-span-2 lg:col-span-1 mt-4 lg:mt-0">
             <div className="flex items-center gap-2 mb-4 text-left">
               <img
                 src="/images/b029bc51ef711d6a2be540f499ae3581a58a5da6.png"

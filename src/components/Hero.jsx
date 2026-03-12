@@ -20,8 +20,8 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-black/60" />
 
-      <Container className="relative z-10 flex items-center min-h-[70vh] sm:min-h-[80vh] lg:min-h-[100vh]">
-        <div className="max-w-[480px] sm:max-w-[520px]">
+      <Container className="relative z-10 flex items-start lg:items-center min-h-[70vh] sm:min-h-[80vh] lg:min-h-[100vh] py-16 sm:py-24">
+        <div className="max-w-[520px]">
           <h1 className="font-wulkan-display font-semibold text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-[32px] sm:leading-[38px] uppercase text-white">
             Need a mental
             <br />

@@ -24,8 +24,8 @@ const TreatmentFocus = () => {
   ];
 
   return (
-    <Section className="bg-cream-50">
-      <div className="max-w-6xl mx-auto py-10 sm:py-12">
+    <Section className="bg-cream-50" containerClassName="max-w-6xl">
+      <div className="py-10 sm:py-12">
         <div className="text-center mb-10">
           <h2 className="font-wulkan-display font-bold text-[26px] sm:text-[30px] text-ink-900">
             Our Treatment Focus
@@ -37,8 +37,8 @@ const TreatmentFocus = () => {
               key={item.title}
               className={`grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center ${item.align === 'right' ? 'md:[&>*:first-child]:order-2 md:[&>*:last-child]:order-1' : ''}`}
             >
-              <div className={`flex ${item.align === 'right' ? 'justify-start' : 'justify-end'}`}>
-                <div className="w-[190px] h-[190px] sm:w-[220px] sm:h-[220px] rounded-full border border-gold-600 p-1">
+              <div className={`flex justify-center ${item.align === 'right' ? 'md:justify-start' : 'md:justify-end'}`}>
+                <div className="w-[170px] h-[170px] sm:w-[200px] sm:h-[200px] lg:w-[220px] lg:h-[220px] rounded-full border border-gold-600 p-1">
                   <img
                     src="/images/2a07a7c8585529d7c710103b474635150518f950.png"
                     alt="Treatment"
@@ -47,11 +47,11 @@ const TreatmentFocus = () => {
                 </div>
               </div>
               <div className={`${item.align === 'right' ? 'flex justify-end' : ''}`}>
-                <div className="max-w-[320px] md:max-w-[320px]">
-                  <h3 className="font-wulkan-display font-bold text-[22px] sm:text-[24px] text-ink-900 mb-4 text-center md:text-left">
+                <div className="max-w-[320px] sm:max-w-[360px] lg:max-w-[420px] mx-auto md:mx-0">
+                  <h3 className="font-wulkan-display font-bold text-[20px] sm:text-[22px] lg:text-[24px] text-ink-900 mb-4 text-center md:text-left">
                     {item.title}
                   </h3>
-                  <p className="font-work-sans text-[13px] sm:text-[14px] leading-[20px] text-ink-900 mb-5 text-center md:text-left">
+                  <p className="font-work-sans text-[13px] sm:text-[14px] leading-[20px] sm:leading-[22px] text-ink-900 mb-5 text-center md:text-left">
                     {item.text}
                   </p>
                   <div className="flex justify-center md:justify-start">

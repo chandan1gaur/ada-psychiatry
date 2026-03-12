@@ -16,8 +16,11 @@ const Testimonials = () => {
     const updateVisible = () => {
       const width = window.innerWidth;
       const containerWidth = containerRef.current?.offsetWidth || width;
-      if (width < 640) {
-        setCardWidth(Math.min(340, Math.floor(containerWidth * 0.92)));
+      if (width < 480) {
+        setCardWidth(Math.min(300, Math.floor(containerWidth * 0.88)));
+        setCardGap(12);
+      } else if (width < 768) {
+        setCardWidth(Math.min(360, Math.floor(containerWidth * 0.9)));
         setCardGap(14);
       } else if (width < 1024) {
         setCardWidth(520);
@@ -67,7 +70,7 @@ const Testimonials = () => {
         </h2>
       </div>
 
-      <div ref={containerRef} className="relative overflow-hidden w-full px-2 sm:px-4">
+      <div ref={containerRef} className="relative overflow-hidden w-full px-2 sm:px-4 md:px-6">
         <div
           className={`flex ${noTransition ? '' : 'transition-transform duration-500 ease-out'}`}
           style={{
