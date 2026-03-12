@@ -1,14 +1,17 @@
-import React from "react";
 
 const QuoteSection = () => {
   return (
-    <div className="bg-cream-50 overflow-x-hidden w-screen">
-      <img
-        src="/images/Group 1948761237.jpg"
-        alt="Quote section"
-        className="w-screen h-auto object-cover block"
-      />
-    </div>
+    <section className="relative bg-black py-10 sm:py-12 flex flex-col items-center justify-center text-center">
+      <div
+        className="font-wulkan-display font-bold text-[100px] leading-[29px] text-gold-600"
+        style={{ width: '40px', height: '90px' }}
+      >
+        &ldquo;
+      </div>
+      <p className="font-wulkan-display font-bold text-[32px] leading-[29px] text-white max-w-[906px]">
+        We help people living with and experiencing difficult times
+      </p>
+    </section>
   );
 };
 
