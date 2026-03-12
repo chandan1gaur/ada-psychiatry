@@ -1,11 +1,16 @@
 import React from 'react';
+import Container from './layout/Container';
 
-const Section = ({ id, className = '', children }) => {
+const Section = ({ id, className = '', children, withContainer = true, containerClassName = '' }) => {
   return (
-    <section id={id} className={`py-12 md:py-20 ${className}`} style={{ width: '100vw' }}>
-      <div className="max-w-8xl ">
-        {children}
-      </div>
+    <section id={id} className={`py-12 md:py-20 ${className}`}>
+      {withContainer ? (
+        <Container className={containerClassName}>
+          {children}
+        </Container>
+      ) : (
+        children
+      )}
     </section>
   );
 };

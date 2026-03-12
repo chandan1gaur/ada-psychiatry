@@ -25,29 +25,28 @@ const TreatmentFocus = () => {
 
   return (
     <Section className="bg-cream-50">
-      <div className="w-screen" style={{ marginLeft: 'calc(-50vw + 50%)' }}>
-        <div className="max-w-6xl mx-auto px-4 py-10 sm:py-12">
-          <div className="text-center mb-10">
-            <h2 className="font-wulkan-display font-bold text-[26px] sm:text-[30px] text-ink-900">
-              Our Treatment Focus
-            </h2>
-          </div>
-          <div className="space-y-16">
-            {items.map((item) => (
-              <div
-                key={item.title}
-                className={`grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center ${item.align === 'right' ? 'md:[&>*:first-child]:order-2 md:[&>*:last-child]:order-1' : ''}`}
-              >
-                <div className={`flex  ${item.align === 'right' ? 'justify-left' : 'justify-end'}`}>
-                  <div className="w-[190px] h-[190px] sm:w-[220px] sm:h-[220px] rounded-full border border-gold-600 p-1">
-                    <img
-                      src="/images/2a07a7c8585529d7c710103b474635150518f950.png"
-                      alt="Treatment"
-                      className="w-full h-full object-cover rounded-full"
-                    />
-                  </div>
+      <div className="max-w-6xl mx-auto py-10 sm:py-12">
+        <div className="text-center mb-10">
+          <h2 className="font-wulkan-display font-bold text-[26px] sm:text-[30px] text-ink-900">
+            Our Treatment Focus
+          </h2>
+        </div>
+        <div className="space-y-16">
+          {items.map((item) => (
+            <div
+              key={item.title}
+              className={`grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center ${item.align === 'right' ? 'md:[&>*:first-child]:order-2 md:[&>*:last-child]:order-1' : ''}`}
+            >
+              <div className={`flex ${item.align === 'right' ? 'justify-start' : 'justify-end'}`}>
+                <div className="w-[190px] h-[190px] sm:w-[220px] sm:h-[220px] rounded-full border border-gold-600 p-1">
+                  <img
+                    src="/images/2a07a7c8585529d7c710103b474635150518f950.png"
+                    alt="Treatment"
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </div>
-                <div className={` ${item.align === 'right' ? 'flex justify-end' : ''}`}>
+              </div>
+              <div className={`${item.align === 'right' ? 'flex justify-end' : ''}`}>
                 <div className="max-w-[320px] md:max-w-[320px]">
                   <h3 className="font-wulkan-display font-bold text-[22px] sm:text-[24px] text-ink-900 mb-4 text-center md:text-left">
                     {item.title}
@@ -61,10 +60,9 @@ const TreatmentFocus = () => {
                     </button>
                   </div>
                 </div>
-                </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </Section>

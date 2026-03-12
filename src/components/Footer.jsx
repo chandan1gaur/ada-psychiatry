@@ -1,9 +1,10 @@
 import React from 'react';
+import Container from './layout/Container';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white" style={{ width: '100vw', marginLeft: 'calc(-50vw + 50%)' }}>
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 py-10">
+    <footer className="bg-black text-white">
+      <Container className="py-10">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 sm:gap-10">
           <div className="order-1">
             <h4 className="text-gold-700 font-wulkan-display font-bold text-[13px] mb-4 text-left">Quick Links</h4>
@@ -52,13 +53,13 @@ const Footer = () => {
               />
               <span className="text-[11px] font-semibold tracking-[2px]">ADA PSYCHIATRY</span>
             </div>
-            <p className="text-gold-700 text-[12px] mb-2 text-left">Locate us</p>
+            <p className="text-gold-700 font-wulkan-display font-bold text-[13px] mt-5 mb-2 text-left">Locate us</p>
             <p className="text-[12px] text-white leading-[18px] mb-4 text-left">
               1802 E Ray Road, STE A107, Chandler, Arizona 85225
               <br />
               Phone: 480-526-9292
             </p>
-            <p className="text-gold-700 text-[12px] mb-2 text-left">Follow us</p>
+            <p className="text-gold-700 font-wulkan-display font-bold text-[13px] mt-5 mb-2 text-left">Follow us</p>
             <div className="flex items-center gap-3 text-white">
               <span className="w-4 h-4 inline-flex">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
@@ -90,13 +91,14 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
 
       <div className="border-t border-charcoal-700 py-4 text-center text-[11px] text-white">
-        � Ada Psychiatry. All rights reserved.
+        (c) Ada Psychiatry. All rights reserved.
       </div>
     </footer>
   );
 };
 
 export default Footer;
+

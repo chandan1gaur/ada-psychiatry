@@ -1,30 +1,9 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import Section from './Section';
+import { testimonialsData } from '../data/siteData';
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      name: 'Carl Rowan',
-      company: 'Aglets Inc',
-      text:
-        'ADA took a lot of the anxiety and stress out of the equation. I was able to easily sort the directory, and the provider profiles were so helpful in giving me a sense of their energy and approach',
-      avatar: '/images/07686e42742c2a4215779139c67f2d0ae1841330.png',
-    },
-    {
-      name: 'Carl Rowan',
-      company: 'Aglets Inc',
-      text:
-        'ADA took a lot of the anxiety and stress out of the equation. I was able to easily sort the directory, and the provider profiles were so helpful in giving me a sense of their energy and approach',
-      avatar: '/images/07686e42742c2a4215779139c67f2d0ae1841330.png',
-    },
-    {
-      name: 'Carl Rowan',
-      company: 'Aglets Inc',
-      text:
-        'ADA took a lot of the anxiety and stress out of the equation. I was able to easily sort the directory, and the provider profiles were so helpful in giving me a sense of their energy and approach',
-      avatar: '/images/07686e42742c2a4215779139c67f2d0ae1841330.png',
-    },
-  ];
+  const testimonials = testimonialsData;
 
   const [activeIndex, setActiveIndex] = useState(testimonials.length);
   const [cardWidth, setCardWidth] = useState(640);
@@ -88,8 +67,7 @@ const Testimonials = () => {
         </h2>
       </div>
 
-      <div className="w-screen" style={{ marginLeft: 'calc(-50vw + 50%)' }}>
-        <div ref={containerRef} className="relative overflow-hidden w-full px-2 sm:px-4">
+      <div ref={containerRef} className="relative overflow-hidden w-full px-2 sm:px-4">
         <div
           className={`flex ${noTransition ? '' : 'transition-transform duration-500 ease-out'}`}
           style={{
@@ -142,7 +120,6 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-      </div>
       </div>
 
       <div className="mt-8 flex justify-center gap-2">
